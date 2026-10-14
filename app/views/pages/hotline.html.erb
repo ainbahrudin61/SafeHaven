@@ -1,2 +1,79 @@
-<h1>Pages#hotline</h1>
-<p>Find me in app/views/pages/hotline.html.erb</p>
+<% content_for :title, "Hotlines and Immediate Help | SafeSpace Malaysia" %>
+
+<div class="resource-page">
+  <section class="resource-hero">
+    <div class="container">
+      <span class="resource-eyebrow">YOU DESERVE SUPPORT</span>
+      <h1 class="resource-title mt-3">Hotlines &amp; immediate help</h1>
+      <p class="resource-lead mt-3">
+        If you are in danger, need someone to talk to, or are helping another
+        person, these Malaysia-based contacts can be a starting point.
+      </p>
+    </div>
+  </section>
+
+  <section class="resource-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="resource-hotline-card resource-hotline-emergency h-100">
+            <span class="resource-icon"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">IMMEDIATE DANGER</span>
+            <h2>Emergency services</h2>
+            <p>If you or someone else is in immediate danger, call Malaysia's emergency number.</p>
+            <a class="resource-phone" href="tel:999">999</a>
+            <a class="resource-action" href="tel:999">
+              <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>Call 999
+            </a>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="resource-hotline-card h-100">
+            <span class="resource-icon resource-icon-pink"><i class="bi bi-heart-pulse-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">GOVERNMENT SUPPORT LINE</span>
+            <h2>Talian Kasih</h2>
+            <p>
+              Contact Talian Kasih for welfare support and guidance, including
+              help related to domestic violence. Ask the operator about
+              available assistance and next steps.
+            </p>
+            <a class="resource-phone resource-phone-pink" href="tel:15999">15999</a>
+            <a class="resource-action resource-action-pink" href="tel:15999">
+              <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>Call 15999
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="resource-secondary-help mt-4">
+        <div class="resource-icon resource-icon-purple"><i class="bi bi-chat-dots-fill" aria-hidden="true"></i></div>
+        <div>
+          <span class="resource-eyebrow">PREFER TO CONTACT A SUPPORT ORGANISATION?</span>
+          <h2>Women's Aid Organisation (WAO)</h2>
+          <p>
+            WAO provides information and support for women experiencing
+            violence. Contact WAO directly to check its current hotline,
+            messaging options, operating hours, and available services.
+          </p>
+          <a class="resource-link" href="https://wao.org.my/" target="_blank" rel="noopener noreferrer">
+            Visit WAO's official website <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+            <span class="visually-hidden">(opens in a new tab)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="resource-note mt-4">
+        <i class="bi bi-shield-lock-fill" aria-hidden="true"></i>
+        <p class="mb-0">
+          <strong>Think your device is being monitored?</strong>
+          If possible, use a safer phone or computer, or ask someone you trust
+          to contact a service with you. Only take steps that feel safe.
+        </p>
+      </div>
+
+      <div class="resource-bottom-link">
+        <%= link_to "Learn about agencies and other support services", enforcer_path, class: "resource-link" %>
+      </div>
+    </div>
+  </section>
+</div>

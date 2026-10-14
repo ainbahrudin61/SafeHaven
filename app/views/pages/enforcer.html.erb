@@ -1,2 +1,94 @@
-<h1>Pages#enforcer</h1>
-<p>Find me in app/views/pages/enforcer.html.erb</p>
+<% content_for :title, "Agencies and Support Services | SafeSpace Malaysia" %>
+
+<div class="resource-page">
+  <section class="resource-hero">
+    <div class="container">
+      <span class="resource-eyebrow">WHO CAN HELP?</span>
+      <h1 class="resource-title mt-3">Agencies &amp; support services</h1>
+      <p class="resource-lead mt-3">
+        Different organisations can help with emergency response, protection,
+        healthcare, practical support, or emotional support. You can contact
+        the service that best fits what you need.
+      </p>
+    </div>
+  </section>
+
+  <section class="resource-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <article class="resource-card resource-service-card h-100">
+            <span class="resource-icon resource-icon-blue"><i class="bi bi-shield-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">EMERGENCY RESPONSE &amp; REPORTS</span>
+            <h2>Royal Malaysia Police (PDRM)</h2>
+            <p>
+              Call <a href="tel:999">999</a> if there is immediate danger.
+              For non-emergency reporting or to ask about making a police
+              report, contact or visit a police station.
+            </p>
+            <a class="resource-link" href="https://www.rmp.gov.my/" target="_blank" rel="noopener noreferrer">
+              Visit the PDRM website <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="resource-card resource-service-card h-100">
+            <span class="resource-icon resource-icon-pink"><i class="bi bi-people-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">SOCIAL WELFARE &amp; PROTECTION</span>
+            <h2>Department of Social Welfare (JKM)</h2>
+            <p>
+              JKM can provide information about protection options, including
+              Emergency Protection Orders (EPOs), and connect people to relevant
+              welfare support.
+            </p>
+            <a class="resource-link" href="https://www.jkm.gov.my/" target="_blank" rel="noopener noreferrer">
+              Visit the JKM website <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="resource-card resource-service-card h-100">
+            <span class="resource-icon resource-icon-green"><i class="bi bi-hospital-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">HEALTHCARE</span>
+            <h2>Hospitals and One Stop Crisis Centres</h2>
+            <p>
+              Hospitals can assess and treat injuries. Government hospital
+              One Stop Crisis Centres (OSCCs) may coordinate care and support
+              for people affected by violence.
+            </p>
+            <%= link_to "Read about reporting and protection", law_enforcement_path, class: "resource-link" %>
+          </article>
+        </div>
+        <div class="col-md-6">
+          <article class="resource-card resource-service-card h-100">
+            <span class="resource-icon resource-icon-purple"><i class="bi bi-chat-heart-fill" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">ADVOCACY &amp; EMOTIONAL SUPPORT</span>
+            <h2>Non-government support organisations</h2>
+            <p>
+              Organisations such as the Women's Aid Organisation (WAO) may
+              provide support, information, and referrals. Services and
+              eligibility can vary; check directly for current details.
+            </p>
+            <a class="resource-link" href="https://wao.org.my/" target="_blank" rel="noopener noreferrer">
+              Visit Women's Aid Organisation <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+              <span class="visually-hidden">(opens in a new tab)</span>
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="resource-note mt-4">
+        <i class="bi bi-lightbulb-fill" aria-hidden="true"></i>
+        <p class="mb-0">
+          You do not need to contact every agency. A support service can help
+          you understand possible next steps and decide what feels safe for you.
+        </p>
+      </div>
+      <div class="resource-bottom-link">
+        <%= link_to "View helplines and contact options", hotline_path, class: "resource-link" %>
+      </div>
+    </div>
+  </section>
+</div>

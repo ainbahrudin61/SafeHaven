@@ -1,2 +1,66 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<% content_for :title, "Contact and Support | SafeSpace Malaysia" %>
+
+<div class="resource-page">
+  <section class="resource-hero">
+    <div class="container">
+      <span class="resource-eyebrow">WE'RE HERE TO POINT YOU TO SUPPORT</span>
+      <h1 class="resource-title mt-3">Contact &amp; support</h1>
+      <p class="resource-lead mt-3">
+        SafeSpace Malaysia is an educational resource about domestic violence.
+        If you need personal support, confidential advice, or help with safety,
+        please contact a service equipped to assist.
+      </p>
+    </div>
+  </section>
+
+  <section class="resource-section">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="resource-card resource-card-featured h-100">
+            <span class="resource-icon resource-icon-pink"><i class="bi bi-life-preserver" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">LOOKING FOR HELP?</span>
+            <h2>Talk to a support service</h2>
+            <p>
+              Trained support providers can listen, explain options, and help
+              you consider next steps. You can seek information even if you are
+              not ready to make a report or leave a relationship.
+            </p>
+            <%= link_to hotline_path, class: "resource-link" do %>
+              View support and hotline information <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            <% end %>
+          </article>
+        </div>
+        <div class="col-lg-6">
+          <article class="resource-card h-100">
+            <span class="resource-icon resource-icon-blue"><i class="bi bi-shield-exclamation" aria-hidden="true"></i></span>
+            <span class="resource-eyebrow">IN IMMEDIATE DANGER?</span>
+            <h2>Call Malaysia's emergency number</h2>
+            <p>
+              If you or someone else is in immediate danger, call
+              <a href="tel:999">999</a>. If calling is unsafe, move to a safer
+              place or ask someone you trust to call, if possible.
+            </p>
+            <a class="resource-link" href="tel:999">
+              <i class="bi bi-telephone-fill me-2" aria-hidden="true"></i>Call 999
+            </a>
+          </article>
+        </div>
+      </div>
+
+      <div class="resource-note mt-4">
+        <i class="bi bi-info-circle-fill" aria-hidden="true"></i>
+        <p class="mb-0">
+          This website does not monitor messages and cannot provide emergency
+          response, counselling, or legal representation. Please do not share
+          sensitive personal details here.
+        </p>
+      </div>
+
+      <div class="resource-bottom-link">
+        <p class="mb-2">Want to understand your options first?</p>
+        <%= link_to "Read about domestic violence and protection in Malaysia", what_is_path, class: "resource-link" %>
+      </div>
+    </div>
+  </section>
+</div>

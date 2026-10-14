@@ -1,2 +1,197 @@
-<h1>Pages#what_is</h1>
-<p>Find me in app/views/pages/what_is.html.erb</p>
+<% content_for :title, "What Is Domestic Violence? | SafeSpace Malaysia" %>
+
+<div class="what-is-page">
+  <section class="what-is-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+          <span class="what-is-eyebrow">
+            <i class="bi bi-heart-pulse-fill me-2" aria-hidden="true"></i>
+            UNDERSTANDING DOMESTIC VIOLENCE
+          </span>
+          <h1 class="what-is-title mt-3">Everyone deserves to feel safe at home.</h1>
+          <p class="what-is-intro mt-4">
+            Domestic violence is a pattern of behaviour used to hurt, frighten,
+            control or dominate someone in a family or intimate relationship.
+            It is not always visible, and it is never the survivor's fault.
+          </p>
+          <a class="what-is-hero-link" href="#what-it-can-look-like">
+            Learn how to recognise it <i class="bi bi-arrow-down ms-2" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="col-lg-4">
+          <aside class="what-is-reassurance" aria-label="A reminder">
+            <span class="what-is-reassurance-icon">
+              <i class="bi bi-shield-heart-fill" aria-hidden="true"></i>
+            </span>
+            <h2>You are not alone.</h2>
+            <p>You deserve support, respect and a life free from fear.</p>
+            <%= link_to "Find help in Malaysia", hotline_path, class: "what-is-help-link" %>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-is-section" id="what-it-can-look-like">
+    <div class="container">
+      <div class="what-is-section-heading">
+        <span class="what-is-eyebrow">IT CAN TAKE MANY FORMS</span>
+        <h2>Abuse is not always physical.</h2>
+        <p>
+          A person may experience one or several forms of abuse. These behaviours
+          can happen in any relationship and may become more frequent or severe over time.
+        </p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-pink"><i class="bi bi-bandaid-fill" aria-hidden="true"></i></span>
+            <h3>Physical</h3>
+            <p>Hitting, slapping, choking, pushing, restraining, or causing injury in any way.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-purple"><i class="bi bi-chat-heart-fill" aria-hidden="true"></i></span>
+            <h3>Emotional and psychological</h3>
+            <p>Threats, humiliation, intimidation, isolation, constant monitoring, or making someone afraid.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-blue"><i class="bi bi-wallet-fill" aria-hidden="true"></i></span>
+            <h3>Financial</h3>
+            <p>Controlling money, preventing someone from working, withholding necessities, or taking their earnings.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-green"><i class="bi bi-person-lock" aria-hidden="true"></i></span>
+            <h3>Sexual</h3>
+            <p>Any sexual activity or contact without freely given consent, including within a relationship or marriage.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-amber"><i class="bi bi-phone-fill" aria-hidden="true"></i></span>
+            <h3>Digital and coercive control</h3>
+            <p>Tracking someone's location, demanding passwords, repeated unwanted messages, or controlling who they can see.</p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="what-is-card">
+            <span class="what-is-card-icon what-is-icon-teal"><i class="bi bi-house-door-fill" aria-hidden="true"></i></span>
+            <h3>Threats and intimidation</h3>
+            <p>Threatening a person, their children, or someone they care about, or damaging belongings to cause fear.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-is-section what-is-soft-section">
+    <div class="container">
+      <div class="row align-items-start g-5">
+        <div class="col-lg-5">
+          <span class="what-is-eyebrow">RECOGNISING THE SIGNS</span>
+          <h2 class="what-is-subtitle mt-2">It may begin with control, not violence.</h2>
+          <p class="what-is-copy mt-3">
+            Abuse is about power and control. Someone experiencing it may feel
+            isolated, anxious, or unable to make everyday choices freely.
+            Only they can decide what feels safe for them.
+          </p>
+        </div>
+        <div class="col-lg-7">
+          <div class="what-is-signs">
+            <div class="what-is-sign">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <p>They monitor your calls, messages, movements, or social media.</p>
+            </div>
+            <div class="what-is-sign">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <p>They try to keep you away from friends, family, work, or study.</p>
+            </div>
+            <div class="what-is-sign">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <p>You change what you do or say because you are afraid of their reaction.</p>
+            </div>
+            <div class="what-is-sign">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <p>They blame you for their behaviour or say the abuse is your fault.</p>
+            </div>
+            <div class="what-is-sign">
+              <i class="bi bi-check-circle-fill" aria-hidden="true"></i>
+              <p>They control access to money, transport, identification, or healthcare.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-is-section">
+    <div class="container">
+      <div class="what-is-malaysia">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <span class="what-is-eyebrow">KNOW THE MALAYSIAN CONTEXT</span>
+            <h2 class="what-is-subtitle mt-2">Protection and support are available.</h2>
+          </div>
+          <div class="col-lg-7">
+            <p class="what-is-copy">
+              In Malaysia, the Domestic Violence Act 1994 (Act 521), read together
+              with other applicable laws, provides a framework for protection from
+              domestic violence. Depending on the circumstances, protection may
+              include an Emergency Protection Order (EPO), Interim Protection
+              Order (IPO), or Protection Order (PO).
+            </p>
+            <p class="what-is-copy">
+              The Act covers specified family relationships and forms of abuse.
+              Eligibility and the steps to seek protection depend on individual
+              circumstances. The Department of Social Welfare (JKM), the police,
+              or a qualified legal adviser can explain current options.
+            </p>
+            <%= link_to law_enforcement_path, class: "what-is-text-link" do %>
+              Learn about the law and protection
+              <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+            <% end %>
+            <p class="what-is-disclaimer mt-3 mb-0">
+              This page provides general information, not legal advice.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="what-is-section what-is-help-section">
+    <div class="container">
+      <div class="what-is-help-panel">
+        <div>
+          <span class="what-is-eyebrow">A FIRST STEP, WHEN YOU FEEL READY</span>
+          <h2 class="mt-2">If you are worried about yourself or someone else</h2>
+          <p>
+            If it is safe, reach out to someone you trust or contact a support
+            service to talk through options. You do not have to make every decision today.
+          </p>
+        </div>
+        <div class="what-is-emergency">
+          <i class="bi bi-telephone-fill" aria-hidden="true"></i>
+          <div>
+            <strong>In immediate danger?</strong>
+            <p>Call Malaysia's emergency number, <a href="tel:999">999</a>.</p>
+          </div>
+        </div>
+        <%= link_to hotline_path, class: "btn btn-primary-custom" do %>
+          View support and hotline information
+          <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+        <% end %>
+        <p class="what-is-safety-note mb-0">
+          If your device or browsing may be monitored, use a safer device when seeking help if possible.
+        </p>
+      </div>
+    </div>
+  </section>
+</div>

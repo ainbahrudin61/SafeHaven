@@ -1,2 +1,112 @@
-<h1>Pages#law_enforcement</h1>
-<p>Find me in app/views/pages/law_enforcement.html.erb</p>
+<% content_for :title, "Reporting and Legal Protection | SafeSpace Malaysia" %>
+
+<div class="resource-page">
+  <section class="resource-hero">
+    <div class="container">
+      <span class="resource-eyebrow">MALAYSIA • KNOW YOUR OPTIONS</span>
+      <h1 class="resource-title mt-3">Reporting &amp; legal protection</h1>
+      <p class="resource-lead mt-3">
+        If you are experiencing domestic violence, there are steps you can
+        consider to seek help and protection. You can ask questions and learn
+        about your options before deciding what feels right for you.
+      </p>
+      <%= link_to hotline_path, class: "btn btn-primary-custom mt-3" do %>
+        Find support <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+      <% end %>
+    </div>
+  </section>
+
+  <section class="resource-section">
+    <div class="container">
+      <div class="resource-section-heading">
+        <span class="resource-eyebrow">POSSIBLE FIRST STEPS</span>
+        <h2>Choose the route that feels safest.</h2>
+        <p>There is no single right way to ask for help. If it is safe for you, you may:</p>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-md-6 col-lg-4">
+          <article class="resource-card h-100">
+            <span class="resource-step">01</span>
+            <h3>Contact the police</h3>
+            <p>
+              For immediate danger, call <a href="tel:999">999</a>. To make a
+              report, contact or visit a police station. You may ask about
+              making a report in a language you understand.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="resource-card h-100">
+            <span class="resource-step">02</span>
+            <h3>Ask JKM about protection</h3>
+            <p>
+              The Department of Social Welfare (JKM) can explain how to seek an
+              Emergency Protection Order (EPO) and what support may be available.
+              Talian Kasih can also guide callers to assistance.
+            </p>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="resource-card h-100">
+            <span class="resource-step">03</span>
+            <h3>Seek medical care</h3>
+            <p>
+              If you are injured or need medical attention, go to a hospital or
+              clinic. A government hospital's One Stop Crisis Centre (OSCC) may
+              provide help for survivors of violence.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <div class="resource-law-panel mt-5">
+        <div class="resource-icon resource-icon-purple"><i class="bi bi-book-half" aria-hidden="true"></i></div>
+        <div>
+          <span class="resource-eyebrow">THE LAW IN BRIEF</span>
+          <h2>Domestic Violence Act 1994 (Act 521)</h2>
+          <p>
+            Malaysia's Domestic Violence Act provides for protection in
+            specified circumstances and family relationships. Depending on
+            the situation, protection may involve an Emergency Protection
+            Order (EPO), Interim Protection Order (IPO), or Protection Order
+            (PO). The process and eligibility differ; ask JKM, the police, or
+            a qualified legal adviser about current requirements.
+          </p>
+          <p class="resource-disclaimer mb-0">
+            This is general information, not legal advice. It does not replace
+            guidance from the relevant authorities or a qualified adviser.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="resource-section resource-soft-section">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-6">
+          <span class="resource-eyebrow">IF YOU DECIDE TO MAKE A REPORT</span>
+          <h2 class="resource-section-title mt-2">Share what you can, at your pace.</h2>
+          <p class="resource-copy">
+            You may describe what happened, when and where it happened, and
+            whether anyone needs urgent medical care. If safe, keep copies of
+            relevant messages, photographs, or medical records. Do not put
+            yourself at risk to collect evidence.
+          </p>
+        </div>
+        <div class="col-lg-6">
+          <div class="resource-note">
+            <i class="bi bi-heart-fill" aria-hidden="true"></i>
+            <p class="mb-0">
+              You can ask a trusted person or support worker to accompany you.
+              If an authority response does not feel clear, you can ask what
+              the next step is or seek support from an advocate.
+            </p>
+          </div>
+          <%= link_to "See support services and hotlines", hotline_path, class: "resource-link d-inline-block mt-4" %>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
