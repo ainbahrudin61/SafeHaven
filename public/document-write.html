@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SafeHaven - document.write() Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f7f2fb;
+      color: #40344d;
+      padding: 40px 20px;
+      line-height: 1.7;
+    }
+
+    .demo-card {
+      max-width: 650px;
+      margin: auto;
+      padding: 30px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px #30204012;
+    }
+
+    a {
+      color: #7450a7;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const generatedAt = new Date();
+
+    document.write(`
+      <main class="demo-card">
+        <h1>SafeHaven Malaysia</h1>
+        <h2>JavaScript Output Demonstration</h2>
+        <p>This content is generated using document.write().</p>
+        <p>Topic: Domestic Violence Awareness</p>
+        <p>Subject: 2503-ITT588 Lab Work 3</p>
+        <p>Generated at: ${generatedAt.toLocaleString("en-MY")}</p>
+        <a href="/">Return to SafeHaven Homepage</a>
+      </main>
+    `);
+  </script>
+</body>
+</html>

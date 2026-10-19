@@ -246,4 +246,151 @@
 
     </div>
   </div>
+
+<section class="awareness-form-section py-5" id="awareness-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="text-center mb-4">
+          <span class="section-label">JAVASCRIPT INTERACTIVE FEATURE</span>
+          <h2 class="section-title mt-2">Awareness Enquiry Form</h2>
+          <p class="section-description">
+            Explore awareness topics and request general information
+            about domestic violence and available support.
+          </p>
+        </div>
+
+        <div class="awareness-form-card">
+          <form id="awarenessEnquiryForm">
+
+            <div class="mb-3">
+              <label for="enquiryName" class="form-label">Name</label>
+              <input type="text" id="enquiryName" name="name"
+                     class="form-control"
+                     placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryEmail" class="form-label">Email</label>
+              <input type="email" id="enquiryEmail" name="email"
+                     class="form-control"
+                     placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryTopic" class="form-label">
+                Awareness Topic
+              </label>
+              <select id="enquiryTopic" name="topic"
+                      class="form-select" required>
+                <option value="">Select a topic</option>
+                <option value="Domestic Violence">
+                  Domestic Violence
+                </option>
+                <option value="Gender-Based Violence">
+                  Gender-Based Violence
+                </option>
+                <option value="Legal Protection">
+                  Legal Protection
+                </option>
+                <option value="Support Services">
+                  Support Services
+                </option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryMessage" class="form-label">
+                General Enquiry
+              </label>
+              <textarea id="enquiryMessage" name="message"
+                        class="form-control" rows="4"
+                        placeholder="Enter your general enquiry"
+                        required></textarea>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox"
+                     id="enquiryConsent" required>
+              <label class="form-check-label" for="enquiryConsent">
+                I understand this is an educational demonstration form
+                and my information will not be sent to a server.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom w-100">
+              <i class="bi bi-send-fill me-2"></i>
+              Submit Enquiry
+            </button>
+
+          </form>
+
+          <!-- innerHTML output will appear here -->
+          <div id="enquiryOutput" class="mt-4"
+               aria-live="polite"></div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="button" id="openSafetyDialog"
+                  class="btn btn-outline-custom">
+            <i class="bi bi-info-circle me-2"></i>
+            View Safety Information
+          </button>
+        </div>
+
+        <!-- Custom popup dialog -->
+        <div id="safetyDialog" class="lab-modal"
+             role="dialog" aria-modal="true"
+             aria-labelledby="safetyDialogTitle" hidden>
+          <div class="lab-modal-content">
+            <button type="button" id="closeSafetyDialog"
+                    class="lab-modal-close"
+                    aria-label="Close dialog">
+              &times;
+            </button>
+
+            <div class="info-icon purple-icon mb-3">
+              <i class="bi bi-shield-heart-fill"></i>
+            </div>
+
+            <h3 id="safetyDialogTitle">Your Safety Matters</h3>
+
+            <p>
+              Everyone deserves to live free from violence and fear.
+              Seek support from a trusted person or an appropriate
+              support organisation when it is safe to do so.
+            </p>
+
+            <p>
+              In Malaysia, call 999 in an emergency when it is safe
+              to make the call.
+            </p>
+
+            <button type="button" id="understandSafetyDialog"
+                    class="btn btn-primary-custom">
+              I Understand
+            </button>
+          </div>
+        </div>
+
+        <!-- Date and time output -->
+        <p class="text-center mt-4">
+          <strong>Current Date and Time:</strong>
+          <span id="labDateTime">Loading...</span>
+        </p>
+
+        <!-- Link to the document.write demonstration -->
+        <p class="text-center mt-3">
+          <a href="/document-write.html">
+            View JavaScript document.write() Demonstration
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
 </section>
