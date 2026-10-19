@@ -1,0 +1,396 @@
+
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center min-vh-75 py-5 g-5">
+
+      <div class="col-lg-6">
+        <span class="hero-badge">
+          <i class="bi bi-heart-fill"></i>
+          Awareness • Support • Protection
+        </span>
+
+        <h1 class="hero-title mt-4">
+          You Deserve to Feel
+          <span>Safe and Loved.</span>
+        </h1>
+
+        <p class="hero-description mt-4">
+          Everyone deserves a life free from violence and fear.
+          SafeHaven Malaysia provides information, guidance and
+          support to help individuals understand domestic violence
+          and find a path towards safety.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 mt-4">
+          <%= link_to hotline_path, class: "btn btn-primary-custom" do %>
+            <i class="bi bi-telephone-fill me-2"></i>
+            Get Help Now
+          <% end %>
+
+          <%= link_to what_is_path, class: "btn btn-outline-custom" do %>
+            Learn More
+            <i class="bi bi-arrow-right ms-2"></i>
+          <% end %>
+        </div>
+
+        <div class="hero-note mt-4">
+          <i class="bi bi-shield-check me-2"></i>
+          You are not alone. Support is available.
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="hero-image-wrapper">
+          <%= image_tag "safehaven-hero.jpg",
+              alt: "A supportive and caring environment",
+              class: "hero-image" %>
+
+          <div class="floating-card">
+            <div class="floating-icon">
+              <i class="bi bi-heart-pulse-fill"></i>
+            </div>
+            <div>
+              <h6 class="mb-1">You Matter</h6>
+              <p class="mb-0">Your safety comes first.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="welcome-section py-5">
+  <div class="container text-center">
+    <span class="section-label">WELCOME TO SAFEHAVEN</span>
+
+    <h2 class="section-title mt-2">
+      A Safe Place to Learn, Understand and Seek Help
+    </h2>
+
+    <p class="section-description mx-auto mt-3">
+      Knowledge is an important step towards prevention.
+      Explore our resources to understand domestic violence,
+      learn about available protection and discover where to seek help.
+    </p>
+
+    <div class="row g-4 mt-4">
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info-card h-100">
+          <div class="info-icon pink-icon">
+            <i class="bi bi-book-half"></i>
+          </div>
+
+          <h5>Understand Abuse</h5>
+          <p>
+            Learn what domestic violence is and recognise
+            its different forms and warning signs.
+          </p>
+
+          <%= link_to "Explore More", what_is_path,
+              class: "card-link" %>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info-card h-100">
+          <div class="info-icon purple-icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+
+          <h5>Know Your Rights</h5>
+          <p>
+            Discover information about legal protection
+            and the laws related to domestic violence in Malaysia.
+          </p>
+
+          <%= link_to "Learn About the Law",
+              law_enforcement_path, class: "card-link" %>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info-card h-100">
+          <div class="info-icon blue-icon">
+            <i class="bi bi-people-fill"></i>
+          </div>
+
+          <h5>Find Support</h5>
+          <p>
+            Explore information about support services
+            and organisations that may be able to help.
+          </p>
+
+          <%= link_to "View Support", enforcer_path,
+              class: "card-link" %>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <div class="info-card h-100">
+          <div class="info-icon green-icon">
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+
+          <h5>Get Help</h5>
+          <p>
+            Find contact information and hotline resources
+            for assistance and guidance.
+          </p>
+
+          <%= link_to "Find Help", hotline_path,
+              class: "card-link" %>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="awareness-section py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+
+      <div class="col-lg-6">
+        <span class="section-label">RAISE AWARENESS</span>
+
+        <h2 class="section-title mt-2">
+          Abuse Is Not Always Visible
+        </h2>
+
+        <p class="section-description mt-3">
+          Domestic violence can take many forms. It may involve
+          physical harm, emotional abuse, sexual violence,
+          financial control or threats.
+        </p>
+
+        <p class="section-description">
+          Understanding these behaviours can help individuals
+          recognise unhealthy situations and seek appropriate support.
+        </p>
+
+        <%= link_to what_is_path, class: "btn btn-primary-custom mt-2" do %>
+          Understand Domestic Violence
+          <i class="bi bi-arrow-right ms-2"></i>
+        <% end %>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="awareness-box">
+          <div class="awareness-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <div>
+              <h6>Physical Abuse</h6>
+              <p>Hitting, pushing or causing physical injury.</p>
+            </div>
+          </div>
+
+          <div class="awareness-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <div>
+              <h6>Emotional Abuse</h6>
+              <p>Threats, humiliation, intimidation or controlling behaviour.</p>
+            </div>
+          </div>
+
+          <div class="awareness-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <div>
+              <h6>Financial Abuse</h6>
+              <p>Controlling access to money or essential resources.</p>
+            </div>
+          </div>
+
+          <div class="awareness-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <div>
+              <h6>Sexual Abuse</h6>
+              <p>Sexual acts or contact without consent.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="support-section py-5">
+  <div class="container">
+    <div class="support-banner text-center">
+
+      <div class="support-heart">
+        <i class="bi bi-heart-fill"></i>
+      </div>
+
+      <h2>You Do Not Have to Face This Alone</h2>
+
+      <p>
+        If you or someone you know may be experiencing domestic violence,
+        learning about available support can be an important first step.
+      </p>
+
+      <%= link_to hotline_path, class: "btn btn-light-custom mt-3" do %>
+        <i class="bi bi-telephone-fill me-2"></i>
+        Explore Help Resources
+      <% end %>
+
+      <p class="support-note mt-3 mb-0">
+        If you are in immediate danger in Malaysia, call 999.
+      </p>
+
+    </div>
+  </div>
+
+<section class="awareness-form-section py-5" id="awareness-form">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+
+        <div class="text-center mb-4">
+          <span class="section-label">JAVASCRIPT INTERACTIVE FEATURE</span>
+          <h2 class="section-title mt-2">Awareness Enquiry Form</h2>
+          <p class="section-description">
+            Explore awareness topics and request general information
+            about domestic violence and available support.
+          </p>
+        </div>
+
+        <div class="awareness-form-card">
+          <form id="awarenessEnquiryForm">
+
+            <div class="mb-3">
+              <label for="enquiryName" class="form-label">Name</label>
+              <input type="text" id="enquiryName" name="name"
+                     class="form-control"
+                     placeholder="Enter your name" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryEmail" class="form-label">Email</label>
+              <input type="email" id="enquiryEmail" name="email"
+                     class="form-control"
+                     placeholder="Enter your email" required>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryTopic" class="form-label">
+                Awareness Topic
+              </label>
+              <select id="enquiryTopic" name="topic"
+                      class="form-select" required>
+                <option value="">Select a topic</option>
+                <option value="Domestic Violence">
+                  Domestic Violence
+                </option>
+                <option value="Gender-Based Violence">
+                  Gender-Based Violence
+                </option>
+                <option value="Legal Protection">
+                  Legal Protection
+                </option>
+                <option value="Support Services">
+                  Support Services
+                </option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="enquiryMessage" class="form-label">
+                General Enquiry
+              </label>
+              <textarea id="enquiryMessage" name="message"
+                        class="form-control" rows="4"
+                        placeholder="Enter your general enquiry"
+                        required></textarea>
+            </div>
+
+            <div class="form-check mb-4">
+              <input class="form-check-input" type="checkbox"
+                     id="enquiryConsent" required>
+              <label class="form-check-label" for="enquiryConsent">
+                I understand this is an educational demonstration form
+                and my information will not be sent to a server.
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary-custom w-100">
+              <i class="bi bi-send-fill me-2"></i>
+              Submit Enquiry
+            </button>
+
+          </form>
+
+          <!-- innerHTML output will appear here -->
+          <div id="enquiryOutput" class="mt-4"
+               aria-live="polite"></div>
+        </div>
+
+        <div class="text-center mt-4">
+          <button type="button" id="openSafetyDialog"
+                  class="btn btn-outline-custom">
+            <i class="bi bi-info-circle me-2"></i>
+            View Safety Information
+          </button>
+        </div>
+
+        <!-- Custom popup dialog -->
+        <div id="safetyDialog" class="lab-modal"
+             role="dialog" aria-modal="true"
+             aria-labelledby="safetyDialogTitle" hidden>
+          <div class="lab-modal-content">
+            <button type="button" id="closeSafetyDialog"
+                    class="lab-modal-close"
+                    aria-label="Close dialog">
+              &times;
+            </button>
+
+            <div class="info-icon purple-icon mb-3">
+              <i class="bi bi-shield-heart-fill"></i>
+            </div>
+
+            <h3 id="safetyDialogTitle">Your Safety Matters</h3>
+
+            <p>
+              Everyone deserves to live free from violence and fear.
+              Seek support from a trusted person or an appropriate
+              support organisation when it is safe to do so.
+            </p>
+
+            <p>
+              In Malaysia, call 999 in an emergency when it is safe
+              to make the call.
+            </p>
+
+            <button type="button" id="understandSafetyDialog"
+                    class="btn btn-primary-custom">
+              I Understand
+            </button>
+          </div>
+        </div>
+
+        <!-- Date and time output -->
+        <p class="text-center mt-4">
+          <strong>Current Date and Time:</strong>
+          <span id="labDateTime">Loading...</span>
+        </p>
+
+        <!-- Link to the document.write demonstration -->
+        <p class="text-center mt-3">
+          <a href="/document-write.html">
+            View JavaScript document.write() Demonstration
+          </a>
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
